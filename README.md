@@ -10,7 +10,7 @@
     * dags - Folder containing DAGs
         * create_tables_statements.py - SQL statements to create tables
         * create_tables_task.py - DAG to create tables in redshift by executing statements in 'create_tables_statements.py'
-        * udac_example_dag.py - DAG to execute ETL
+        * etl.py - DAG to execute ETL
      
      * plugins - Folder containg DAG operators and SQL statements for loading data
         * operators 
@@ -23,18 +23,18 @@
             * sql_queries.py - SQL statements for loading data from staging tables 
             
 ## Step 1: 
-	* Create redshift cluster 
-    * Make sure to add an IAM role with Administrator Access
+	* Create redshift cluster
+	* Make sure to add an IAM role with Administrator Access
     
 ## Step 2: 
 	* Launch Airflow UI 
 	* Add connection 'redshift' connecting to your redshift cluster
-    * Add connection 'aws_credentials' with your AWS access key and secret key 
+        * Add connection 'aws_credentials' with your AWS access key and secret key 
 
 ## Step 3: 
 	* From the Airflow UI turn on 'create_tables_task' and trigger the dag
  
 ## Step 4: 
-	* Once create_tables_task has succesfully ran turn on udac_example_dag 
+	* Once 'create_tables_task' has succesfully ran turn on 'etl_workflow' and trigger the dag
 
-### Once udac_example_dag has run successfully the data has been properly loaded into Redshift 
+### Once 'etl_workflow' has run successfully the data has been properly loaded into Redshift 
