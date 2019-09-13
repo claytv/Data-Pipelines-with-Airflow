@@ -3,7 +3,7 @@
 ### I created two workflows. One to create the tables in redshift (create_table_task.py) and one executing the ETL (udac_example_dag.py). 
 
 ### File Descriptions
-	* README.md - Overview of the project with instructions
+    * README.md - Overview of the project with instructions
     
     * dags - Folder containing DAGs
     	* create_tables_statements.py - SQL statements to create tables
@@ -11,14 +11,14 @@
         * udac_example_dag.py - DAG to execute ETL
      
      * plugins - Folder containg DAG operators and SQL statements for loading data
-		* operators 
-        	* data_quality.py     - operator to perform data quality checks
+        * operators 
+            * data_quality.py     - operator to perform data quality checks
             * load_dimension.py   - operator to load dimension tables 
             * load_fact.py        - operator to load fact table
             * stage_redshift.py   - operator to extract data from S3 to Redshift
             
         * helpers 
-        	* sql_queries.py - SQL statements for loading data from staging tables 
+            * sql_queries.py - SQL statements for loading data from staging tables 
             
 ## Step 1: 
 	* Create redshift cluster 
