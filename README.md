@@ -8,13 +8,11 @@
     * README.md - Overview of the project with instructions
     
     * dags - Folder containing DAGs
-    
-    	* create_tables_statements.py - SQL statements to create tables
+        * create_tables_statements.py - SQL statements to create tables
         * create_tables_task.py - DAG to create tables in redshift by executing statements in 'create_tables_statements.py'
         * udac_example_dag.py - DAG to execute ETL
      
      * plugins - Folder containg DAG operators and SQL statements for loading data
-     
         * operators 
             * data_quality.py     - operator to perform data quality checks
             * load_dimension.py   - operator to load dimension tables 
