@@ -23,18 +23,18 @@
             * sql_queries.py - SQL statements for loading data from staging tables 
             
 ## Step 1: 
-	* Create redshift cluster
+        * Create redshift cluster
         * Make sure to add an IAM role with Administrator Access
     
 ## Step 2: 
-	* Launch Airflow UI 
-	* Add connection 'redshift' connecting to your redshift cluster
+        * Launch Airflow UI 
+        * Add connection 'redshift' connecting to your redshift cluster
         * Add connection 'aws_credentials' with your AWS access key and secret key 
 
 ## Step 3: 
-	* From the Airflow UI turn on 'create_tables_task' and trigger the dag
+        * From the Airflow UI turn on 'create_tables_task' and trigger the dag
  
 ## Step 4: 
-	* Once 'create_tables_task' has succesfully ran turn on 'etl_workflow' and trigger the dag
+        * Once 'create_tables_task' has succesfully ran turn on 'etl_workflow' and trigger the dag
 
 ### Once 'etl_workflow' has run successfully the data has been properly loaded into Redshift 
