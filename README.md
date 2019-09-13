@@ -2,7 +2,7 @@
 
 ### The goal of this project was to create a workflow using Apache Airflow to execute an ETL of Sparkify log and song data from S3 to Redshift. 
 
-### I created two workflows. One to create the tables in redshift (create_table_task.py) and one executing the ETL (etl_workflow.py). 
+### I created two workflows. One to create the tables in Redshift (create_table_task.py) and one executing the ETL (etl_workflow.py). 
 
 ### File Descriptions
     * README.md - Overview of the project with instructions
