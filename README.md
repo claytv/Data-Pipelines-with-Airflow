@@ -1,3 +1,5 @@
+## Udacity Data Engineer Nanodegree - Data Pipelines with Airflow Project 
+
 ### The goal of this project was to create a workflow using Apache Airflow to execute an ETL of Sparkify log and song data from S3 to Redshift. 
 
 ### I created two workflows. One to create the tables in redshift (create_table_task.py) and one executing the ETL (udac_example_dag.py). 
