@@ -17,7 +17,7 @@ default_args = {
     'schedule_interval': '@hourly'
 }
 
-dag = DAG('udac_example_dag',
+dag = DAG('etl_workflow_dag',
           default_args = default_args,
           description='Load and transform data in Redshift with Airflow',
         )
