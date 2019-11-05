@@ -20,7 +20,7 @@
         * stage_redshift.py   - operator to extract data from S3 to Redshift
             
   * helpers 
-        * sql_queries.py - SQL statements for loading data from staging tables 
+       * sql_queries.py - SQL statements for loading data from staging tables 
             
 ## Step 1: 
   * Create redshift cluster
